@@ -4,10 +4,15 @@ import (
 	"container/list"
 )
 
+// Stack interface supporting the normal stack functions.  The implementation uses a linked list
 type Stack interface {
+	// Push puts an item on the top of the stack
 	Push(item interface{})
+	// Pop removes an item from the top of the stack
 	Pop() interface{}
+	// Peek looks at the item at the top of the stack but does not remove the item
 	Peek() interface{}
+	// Empty returns if the stack has items or not
 	Empty() bool
 }
 

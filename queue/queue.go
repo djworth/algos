@@ -4,10 +4,15 @@ import (
 	"github.com/djworth/algos/stack"
 )
 
+// Queue is the interface of a queue implementation using two stacks
 type Queue interface {
+	// Add puts an item on the queue
 	Add(item interface{})
+	// Remove takes the first time off of the queue
 	Remove() interface{}
+	// Peek returns the first on the queue
 	Peek() interface{}
+	// Empty returns true or false if the queue contains values
 	Empty() bool
 }
 

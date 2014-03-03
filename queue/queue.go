@@ -21,7 +21,7 @@ type queue struct {
 	s2 stack.Stack
 }
 
-func New() *queue {
+func New() Queue {
 	return &queue{s1: stack.New(), s2: stack.New()}
 }
 
